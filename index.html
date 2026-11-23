@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Dojo Weather</div>
+        <div class="city-nav">
+            <a class="city-link">Burbank</a>
+            <a class="city-link">Chicago</a>
+            <a class="city-link">Dallas</a>
+        </div>
+
+    </nav>
+    <div class="header">
+        <h2>San Jose</h2>
+        <div class="controls">
+            show temperature in
+            <select name="temperature" id="temperature">
+                <option value="°C">°C</option>
+                <option value="°F">°F</option>
+            </select>
+        </div>
+    </div>
+    <hr class="line" />
+
+    <div class="days-card">
+        <div class="day">
+            <p>Today</p>
+            <img src="img/some_rain.png" alt="rain">
+            <p>some rain</p>
+            <div class="temp">
+                <p class="temp-high">24°</p>
+                <p class="temp-low">18°</p>
+            </div>
+        </div>
+        <div class="day">
+            <p>Tomorrow</p>
+            <img src="img/some_sun.png" alt="Sun">
+            <p>some sun</p>
+            <div class="temp">
+                <p class="temp-high">27°</p>
+                <p class="temp-low">19°</p>
+            </div>
+        </div>
+        <div class="day">
+            <p>Friday</p>
+            <img src="img/some_clouds.png" alt="rain">
+            <p>some clouds</p>
+            <div class="temp">
+                <p class="temp-high">21°</p>
+                <p  class="temp-low">16°</p>
+            </div>
+        </div>
+        <div class="day">
+            <p>Saturday</p>
+            <img src="img/some_sun.png" alt="sun">
+            <p>some sun</p>
+            <div class="temp">
+                <p  class="temp-high">26°</p>
+                <p  class="temp-low">21°</p>
+            </div>
+        </div>
+    </div>
+    <div class="cookie-card">
+        <img src="img/cookie.png" alt="Cookie">
+        <div class="cookie-info">
+        <p style="font-size: larger; font-weight: bold;">Stop! Cookie time</p>
+        <p>We use cookie (sadly not the edible ones) to personoalize content and ads,to provide social media features and to analyse our traffic. <span>Read more...</span></p>
+       </div>
+        <button type="button" id="btn" onclick="disappear(this)">I Accept</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
